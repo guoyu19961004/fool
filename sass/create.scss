@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+html {
+	width:100%;
+	height:100%;
+	font-size:62.5%;
+	font-family:"STHeiti Light",sans-serif;
+	background-color:#feb8c9;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-webkit-tap-highlight-color: transparent;
+}
+.img-wrap{
+	height:50%;
+	margin-top:1rem;
+	text-align:center;
+}
+.img-wrap img{
+	height:100%;
+}
+form{
+	margin-top:3rem;
+	text-align:center;
+}
+input[type="radio"]{
+	display:none;
+}
+span{
+	font-size:1.5rem;
+	color:#434343;
+	line-height:2.5rem;
+	display:inline-block;
+	vertical-align:middle;
+}
+label{
+	position:relative;
+	width:5rem;
+	height:2.5rem;
+	line-height:2.5rem;
+	font-size:1.5rem;
+	color:#434343;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+	background-color:#b3ecf8;
+	@include border-radius(1.2rem);
+	@at-root .heart{
+		position:absolute;
+		top:-1em;
+		left:-1rem;
+		opacity:0;
+		@include transition(opacity 0.5s ease-in-out);
+	}
+}
+label.male-label{
+	margin:0 1.2rem 0 3.1rem;
+}
+button{
+	position:relative;
+	width:16rem;
+	height:4.4rem;
+	font-size:1.5rem;
+	color:#434343;
+	background-color:#b3ecf8;
+	display:block;
+	margin:5rem auto 0 auto;
+	border:none;
+	@include border-radius(2.2rem);
+	@at-root .button-img{
+		position:absolute;
+		top:-2.8rem;
+		left:0.8rem;
+		width:3.7rem;
+		height:4.2rem;
+	}
+}

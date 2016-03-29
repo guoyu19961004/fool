@@ -1,0 +1,268 @@
+/* line 5, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/show.scss */
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "STHeiti Light",sans-serif;
+  background-color: #feb8c9;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 14, ../sass/show.scss */
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@-moz-keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 28, ../sass/show.scss */
+.share {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 5;
+  display: none;
+}
+/* line 34, ../sass/show.scss */
+.share .img-wrap {
+  position: fixed;
+  top: 0;
+  right: 2rem;
+  width: 120px;
+}
+/* line 39, ../sass/show.scss */
+.share .img-wrap img {
+  width: 100%;
+}
+
+/* line 45, ../sass/show.scss */
+.wedding {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #feb8c9;
+  text-align: center;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -o-transition: -o-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  z-index: 3;
+}
+
+/* line 54, ../sass/show.scss */
+.wedding-img {
+  height: 50%;
+  text-align: center;
+}
+/* line 57, ../sass/show.scss */
+.wedding-img img {
+  height: 100%;
+}
+
+/* line 61, ../sass/show.scss */
+.wedding-text {
+  margin-top: 10%;
+  height: 25%;
+  -moz-animation: showText 1s ease-in-out;
+  -webkit-animation: showText 1s ease-in-out;
+  animation: showText 1s ease-in-out;
+}
+/* line 65, ../sass/show.scss */
+.wedding-text p {
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* line 71, ../sass/show.scss */
+.button {
+  width: 2.9rem;
+  height: 1.7rem;
+  margin: 10% auto 0 auto;
+}
+/* line 75, ../sass/show.scss */
+.button img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 80, ../sass/show.scss */
+.wedding-pic-wrap {
+  position: absolute;
+  width: 100%;
+  height: 68%;
+  z-index: 2;
+  background-color: #feb8c9;
+  display: none;
+}
+
+/* line 88, ../sass/show.scss */
+.wedding-pic {
+  height: 80%;
+  margin-top: 10%;
+  text-align: center;
+}
+/* line 92, ../sass/show.scss */
+.wedding-pic img {
+  height: 100%;
+}
+
+/* line 96, ../sass/show.scss */
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #feb8c9 url("../images/follwer_bg.png") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-transition: -moz-transform 0.5s ease-in-out;
+  -o-transition: -o-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+}
+
+/* line 105, ../sass/show.scss */
+.text {
+  height: 50%;
+  padding-top: 20%;
+  text-align: center;
+}
+/* line 109, ../sass/show.scss */
+.text p {
+  margin-bottom: 1.9rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* line 114, ../sass/show.scss */
+.text span {
+  font-size: 1.8rem;
+  margin: 0 0.2rem;
+  color: #b3ecf8;
+}
+
+/* line 120, ../sass/show.scss */
+.check {
+  margin-top: 15%;
+}
+
+/* line 123, ../sass/show.scss */
+button {
+  position: relative;
+  margin: 2.5rem auto 0 auto;
+  width: 16rem;
+  height: 4.4rem;
+  font-size: 1.5rem;
+  color: #434343;
+  background-color: #b3ecf8;
+  display: block;
+  border: none;
+  -moz-border-radius: 2.2rem;
+  -webkit-border-radius: 2.2rem;
+  border-radius: 2.2rem;
+}
+/* line 134, ../sass/show.scss */
+.button-img {
+  position: absolute;
+  top: -2.8rem;
+  left: 0.8rem;
+  width: 3.7rem;
+  height: 4.2rem;
+  z-index: 5;
+}
